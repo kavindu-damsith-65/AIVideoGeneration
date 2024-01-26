@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Link to an external JavaScript file -->
+    <script src="https://kit.fontawesome.com/7995db6562.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<body>
+
+    <header>
+        <div class="bgColor1">
+            <nav class="navbar   justify-content-between px-3">
+                <a class="navbar-brand">
+                    <h3>LOGO</h3>
+                </a>
+                <div class="d-flex align-items-center">
+                    <button class="mx-1" data-bs-toggle="modal" data-bs-target="#signInModel">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> Sign in
+                    </button>
+
+                    <div class="action">
+                        <button onclick="menuToggle()" class="fa fa-user-circle-o accountIcon mx-1"
+                            aria-hidden="true"></button>
+                        <div class="menu activedrop">
+                            <ul>
+                                <li><i class="fa-solid fa-gear mx-2"></i><a href="#">Billing</a></li>
+                                <li><i class="fa-solid fa-list  mx-2"></i><a href="#">Plans</a></li>
+                                <li><i class="fa-solid fa-question mx-2"></i><a href="#"> &nbsp;Help Center</a></li>
+                                <li><i class="fa-solid fa-right-from-bracket mx-2"></i><a href="#">Log-Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <div class="container mt-2">
+        <div class="row mainInp">
+            <div class="col col-md-6 col-lg-8 mt-2">
+                <div class="mt-3">
+                    <h6>
+                        Video topic
+                    </h6>
+                    <input type="text" class="form-control" placeholder="Generate a video about..." aria-label="topic"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="mt-5">
+                    <h6>
+                        Size
+                    </h6>
+                    <div class="row screenContainer">
+                        <div class="screensize">
+                            <div class="active">
+                                <div class="res9_16"></div>
+                                <div class="ticmark">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p>9:16</p>
+                        </div>
+                        <div class="screensize">
+                            <div>
+                                <div class="res1_1"></div>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p>1:1</p>
+                        </div>
+                        <div class="screensize">
+                            <div>
+                                <div class="res16_9"></div>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p>16:9</p>
+                        </div>
+                        <div class="screensize">
+                            <div>
+                                <div class="res4_5"></div>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p>4:5</p>
+                        </div>
+                        <div class="screensize">
+                            <div>
+                                <div class="res5_4"></div>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <p>5:4</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col col-md-6">
+                            <h6>
+                                Language of text input
+                            </h6>
+                            <select class=" defaultSelect" aria-label=".form-select-lg example">
+                                <option selected>English(US)</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-6">
+                            <h6>
+                                Narration Voice
+                            </h6>
+                            <select class="defaultSelect" aria-label=".form-select-lg example">
+                                <option selected>Female</option>
+                                <option value="1">Male</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h6>
+                        Styles
+                    </h6>
+                    <div class="videostyle">
+                        <div>
+                            <img class="styleImage active" src="./assets/styles/1.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="ticmark">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/2.jpg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/3.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/1.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/2.jpg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/3.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/1.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/2.jpg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="styleImage" src="./assets/styles/3.jpeg" alt="">
+                            <p>Photo</p>
+                            <div class="hideTic">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="mt-5">
+                    <h6>
+                        Approximate duration
+                    </h6>
+
+                    <div class="row screenContainer">
+                        <div class="screensize">
+                            <div class="active durationWrapper">
+                                <p class="m-0">15s</p>
+                                <div class="ticmark">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screensize">
+                            <div class="durationWrapper">
+                                <p class="m-0">30s</p><span class="crownWrapper"><i class='fas fa-crown'></i></span>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screensize">
+                            <div class="durationWrapper">
+                                <p class="m-0">1m</p><span class="crownWrapper"><i class='fas fa-crown'></i></span>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screensize">
+                            <div class="durationWrapper">
+                                <p class="m-0">2m</p><span class="crownWrapper"><i class='fas fa-crown'></i></span>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screensize">
+                            <div class="durationWrapper">
+                                <p class="m-0">3m</p><span class="crownWrapper"><i class='fas fa-crown'></i></span>
+                                <div class="hideTic">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-4 ">
+                <div class="videoWrapper">
+                    <div class="mx-3 px-2">
+                        <p>
+                            This is just a preview of the size of your video. Click Generate video to start the creation
+                            process.
+                        </p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="./assets/preview.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="pakegeWrapper">
+                            <p>0m/2m</p>
+                            <progress id="file" max="100" value="70">70%</progress>
+                            <button class="upgrade">
+                                Upgrade
+                            </button>
+
+                        </div>
+                        <button class="generateVideo">
+                            Generate video
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Sign in Modal -->
+    <div class="modal fade" id="signInModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content defaultmodel">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="mx-3 mt-3 close-button " data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <h2>Sign in with Google</h2>
+                        <br />
+                        <div class="d-flex justify-content-center googleloginWrapper">
+                            <div class="google-btn">
+                                <div class="google-icon-wrapper">
+                                    <img class="google-icon"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p class="btn-text"><b>Continue with Google</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+     <!--Generete vodeo model -->
+     <div class="modal fade" id="generateVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content defaultmodel">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="mx-3 mt-3 close-button " data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <h2>Sign in with Google</h2>
+                        <br />
+                        <div class="d-flex justify-content-center googleloginWrapper">
+                            <div class="google-btn">
+                                <div class="google-icon-wrapper">
+                                    <img class="google-icon"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <p class="btn-text"><b>Continue with Google</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

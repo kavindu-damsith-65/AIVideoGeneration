@@ -1,0 +1,539 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1D262D;
+    color: white;
+}
+
+
+.bgColor1 {
+    background-color: #2A3742;
+}
+
+
+
+
+.navbar {
+    background-color: #2A3742;
+}
+
+
+.navbar button {
+    font-weight: 500;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.navbar button:hover {
+    color: rgb(163, 163, 163);
+}
+
+.navbar a h3 {
+    font-weight: 1000;
+    color: white;
+}
+
+.accountIcon{
+    font-size: 40px;
+}
+
+
+
+
+.mainInp div input {
+    margin-top: 14px;
+    height: 50px;
+}
+
+.screenContainer {
+    display: flex;
+    justify-content: start;
+    margin-left: 1px;
+}
+
+
+
+
+
+.screensize {
+    max-width: 150px;
+    margin: 5px 7px;
+    padding: 0px;
+}
+
+.screensize>div {
+    width: 100%;
+    height: 70px;
+    background-color: #2A3742;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.screensize>.active {
+    background-color: #526170;
+    border: solid 1px #17E1D6;
+}
+
+.active {
+    border: solid 1px #17E1D6;
+}
+
+
+.ticmark {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: black;
+    font-size: 13px;
+    background-color: #17E1D6;
+    border-radius: 50px;
+    padding: 0 4px;
+}
+
+.hideTic {
+    display: none;
+}
+
+
+.screensize>p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0px;
+}
+
+.res9_16 {
+    width: 25px;
+    height: 55px;
+    background-color: #A4AFB8;
+    border-radius: 5px;
+}
+
+.res1_1 {
+    width: 55px;
+    height: 55px;
+    background-color: #A4AFB8;
+    border-radius: 5px;
+}
+
+.res16_9 {
+    width: 65px;
+    height: 35px;
+    background-color: #A4AFB8;
+    border-radius: 5px;
+}
+
+.res4_5 {
+    width: 45px;
+    height: 55px;
+    background-color: #A4AFB8;
+    border-radius: 5px;
+}
+
+.res5_4 {
+    width: 55px;
+    height: 45px;
+    background-color: #A4AFB8;
+    border-radius: 5px;
+}
+
+
+/* 
+.dropdown.defaultSelect{
+    background-color: #3B4954;
+    border: none;
+    color: white;
+} */
+.defaultSelect {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #3B4954;
+    color: white;
+
+}
+
+.defaultSelect:focus {
+    border: none;
+    outline: none;
+    border-color: #66afe9;
+}
+
+.defaultSelect::after {
+    content: "ka";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.defaultSelect:focus::after {
+    border-color: #66afe9;
+}
+
+
+
+
+
+.videostyle>div {
+    position: relative;
+    margin-right: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.styleImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.videostyle p {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+
+.durationWrapper {
+    height: 60px !important;
+    cursor: pointer;
+}
+
+.crownWrapper {
+    height: 22px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 17%;
+    text-align: right;
+    background-color: #FBE598;
+    /* margin: 0 15px; */
+    padding: 2px 5px;
+    border-radius: 50px;
+    color: black;
+    font-size: 13px;
+}
+
+
+
+.videoWrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.videoWrapper>div {
+    background-color: #2A3742;
+    width: 100%;
+    min-height: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.videoWrapper>div>p {
+    font-size: 13px;
+    color: #5A6979;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.generateVideo {
+    color: black;
+    background-color: #17E1D6;
+    border-radius: 6px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 70%; */
+}
+
+video {
+
+    max-width: 70%;
+    height: auto;
+}
+
+.pakegeWrapper {
+    color: black;
+    background-color: #FFE899;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 25px;
+}
+
+.videoWrapper .upgrade {
+    color: black;
+    background-color: #FFF6D6;
+    border-radius: 6px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pakegeWrapper p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.pakegeWrapper progress{
+    width: 100%;
+    background: crimson;
+  
+}
+
+progress {
+    border: 0;
+    height: 10px;
+    border-radius: 20px;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 10px;
+    border-radius: 20px;
+    background:#FFF6D6 ;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    height: 10px;
+    border-radius: 20px;
+    background: #2A3742;
+}
+progress::-moz-progress-bar {
+    border: 0;
+    height: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* model styles  */
+
+.defaultmodel {
+    background-color: #1D262D;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.defaultmodel .modal-body h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    width: 100%;
+}
+
+.googleloginWrapper {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.google-btn {
+    width: 250px;
+    height: 42px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.google-btn .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.google-btn .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+
+.google-btn .btn-text {
+    margin: 11px 11px 0px 30px;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+.google-btn:hover {
+    box-shadow: 0 0 6px #4285f4;
+}
+
+/* .google-btn:active {
+    background: #1669F2;
+  } */
+
+.modal-backdrop {
+    background-color: #686868;
+    /* You can use any color you prefer */
+}
+
+.modal-body {
+    padding-top: 0px !important;
+}
+
+
+.default-cancel{
+    background-color: #5D7184;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 13px;
+
+}
+
+.default-primary{
+    background-color: #17E1D6;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/* navbar styles  */
+/* .action {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+} */
+
+
+.action .menu {
+    position: absolute;
+    top: 120px;
+    right: 5px;
+    padding: 10px 10px;
+    background: #fff;
+    width: 200px;
+    border-radius: 6px;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    background-color:#1D262D ;
+    border: 1px solid white;
+}
+
+.action .menu.activedrop {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #1D262D;
+    transform: rotate(45deg);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.action .menu ul{
+    padding: 0;
+}
+
+
+.action .menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.action .menu ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: .5;
+    transition: 0.5s;
+}
+
+.action .menu ul li:hover img {
+    opacity: 1;
+}
+
+.action .menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.action .menu ul li {
+   
+    color:  white;
+}
+
+
+.action .menu ul li:hover {
+    background-color: #2A3742;
+    border-radius: 5px;
+    color: rgb(185, 184, 184);
+}
+
+

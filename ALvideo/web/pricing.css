@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    /* background-color: #1D262D; */
+    color: white;
+}
+
+
+.bgColor2 {
+    background-color: #262626;
+}
+
+
+.pricing  h5{
+    font-weight: 700;
+}
+
+.billing-type{
+    align-items: center;
+}
+
+.billing-type > div input{
+   height: 30px;
+    width: 55px !important;
+    border: none;
+    background-color: #17E1D6 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important; 
+}
+
+
+.pricing-item{
+    width: 100%;
+    background-color: #1a1a1a ;
+    min-height: 200px;
+    border-radius: 12px;
+}
+
+.pricing-item h6{
+  font-size: 14px;
+}
+
+.pricing-item h2{
+    font-size: 40px;
+    margin-top: 60px;
+    font-weight: 1000;
+}
+
+.popular-tag{
+    font-size: 12px;
+    background-color: #262626;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.pricingSelect {
+    width: 100%;
+    padding: 5px;
+
+    border: solid 1px white;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #262626;
+    color: white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")!important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")!important;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size:16px 12px
+}
+
+.pricingSelect:focus {
+    border: solid 1px white;
+    outline: none;
+ 
+}
+
+
+.pricingSelect:focus::after { 
+    border-color: black !important;
+}
+
+
+.active-pricing{
+    background-color: #3C3C3C  !important;
+} 
+
+
